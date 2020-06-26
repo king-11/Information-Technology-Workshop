@@ -1,0 +1,24 @@
+1 ./scripts4/myscript.sed
+2a sed '1,100 s/gum/drum/' file
+2b sed -n '/apple/p' file | sed -n '/mango/p' file | sed -e 's/mango/apple/' -e 's/apple/mango/' file
+2c sed -n 5p file| sed ':a; s/ [[:digit:]]\+ / /1g; ta' file
+3 sed 's/\ /\,/g' numbers 
+4 sed 's/\([^:]*\).*/\1/' /etc/passwd
+5 sed -e '1d' -e '' -e '/^$/d' file
+6 awk 'NR>=2 { print ,,,, } ' f ; echo  ;awk 'NF<5&&NR>=2 {print}' f
+7 awk 'BEGIN {print Name ID Average} NR>=2 { print ,,(++)/(NF-2) } ' f 
+8 awk '{ORS=NR%3?,:n};1' f 
+9 awk 'BEGIN { for(i=1;i<=6;i++) if(i!=5) print i; }'
+10 awk 'NR>1 {print NF,bash}' f
+11 cut -d ";" -f 1,3,4 f1 --output-delimiter=  
+12 cut -d : -f 1,6,7 /etc/passwd  --output-delimiter='#' | grep /bin/bash 
+13 cat file |tr -s [:space:] ' ' | tr -d a 
+14 ./scripts4/ques14.sh
+15 ./scripts4/ques15.sh
+16 ./scripts4/ques16.sh
+17 ./scripts4/ques17.sh
+18 cut -d : -f 1,6,7 /etc/passwd  --output-delimiter='#' | grep /bin/bash	
+19 sed /^$/p file
+20a sed -ne '1'p -ne '$'p file
+20b sed /unix/d file
+21 sed -n '2,' file| sed s/linux/unix/| grep -w os

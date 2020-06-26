@@ -1,0 +1,112 @@
+banner Good Morning India
+history > history1.txt
+ls -l
+ls -x chap*
+ls -x chap?
+ls -x chap??
+ls -x chap[123]
+ls -x chap[1-4]
+ls -x chap[x-z]
+wc list
+ls | wc
+cp lecture1 chapter1
+cp lecture1 ..
+cp ../lecture1 .
+file os-organization.png
+file *
+df -h
+du -hs folder
+man grep
+grep unix grepfile
+grep -i "UNix" grepfile // Case insensitive search
+grep -c "unix" grepfile // Displaying the count of number of matches
+grep uni grepfile
+grep -w "uni" grepfile // Checking for the whole words in a file
+grep -o "unix" grepfile // Displaying only the matched pattern
+grep -n "unix" grepfile // Show line number while displaying the output
+grep -v "unix" grepfile // Not mached lines
+grep "^unix" grepfile //Matching the lines that start with a string : The ^ regular expression pattern.
+grep "os$" grepfile //Matching the lines that end with a string : The $ regular expression pattern.
+tty
+uname -r
+type wc
+type echo
+type grep
+type tty
+type uname
+sort newlist 
+sort -o list1 note
+sort note > sortlist
+gedit sortlist
+echo $PATH
+cat chap?? >> textbook
+passwd
+spell newlist
+ispell newlist  
+split list
+wc -l xa*
+cmp chap1 chap2 // first difference only
+cmp -l chap1 chap2 // 1st differ position, 2nd value of differ position in first file and 3rd for 2nd file//
+comm chap11 chap22 // 1st first file diff, 2nd is 2nd file diff, 3rd is common
+comm -12 chap11 chap22 // -1 is supress first file diff, -2 is supress second file diff
+diff a1 a2 // a : add, c : change, d : delete
+diff -c a1 a2 // marking context
+x=37
+echo $x
+y=5
+echo $xyz
+msg='hello india' ; echo $msg
+msg=hello\ india ; echo $msg
+echo ${msg}XX
+y=5
+z=$x$y
+echo $z
+count="ls -l"
+$count
+echo $count
+mydir=`ls -l`
+$mydir
+echo $mydir
+echo 'The avg pay is $100'
+echo
+x=5
+echo $x
+echo $x+5
+man bc
+echo "12+5" | bc
+echo "$x+5" | bc
+echo "10^2" | bc
+x=`echo "12+5" | bc`
+echo $x
+echo "var=10;var" | bc
+echo "var=10;var^=2;var" | bc
+x=`echo "var=500;var%=7;var" | bc`
+echo $x
+echo "var=10;++var" | bc 
+echo "var=10;var++" | bc
+echo "var=10;--var" | bc
+echo "var=10;var--" | bc
+echo "10>5" | bc
+echo "1==2" | bc
+echo "10 && 5" | bc
+echo "0 || 0" | bc
+echo "! 0" | bc
+pi=`echo "h=10;4*a(1)" | bc -l`
+echo "scale($pi)" | bc -l  // The number of digits after the decimal point
+echo "obase=2;15" | bc -l
+echo "obase=8;9" | bc -l
+echo "ibase=2;1111" | bc -l
+echo "ibase=2;obase=8;10" | bc -l
+echo 'n=8;m=10;if(n>m) print "n is greater" else print "m is greater" ' | bc -l // conditional
+echo "for(i=1; i<=10; i++) {i;}" | bc // iteration
+man ps
+man chmod
+who | tee user.lst | wc -l
+sudo poweroff
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+# 1
+ps -p 1 -o etime
+passwd -S | grep "ITW1"
+# 2
+./scripts3/ques2.sh
+# 3
+a) bc ./scripts/calc
+b) seq 1 9
+# 4
+a) 
+b)time command
+# 5
+process of console related to dev/console (-t tty)
+# 6
+./scripts3/ques6.sh
+# 7 
+scripts3/ques7.sh
+# 8
+./scripts3/ques8.sh
+# 9 
+./scripts3/ques9.sh
+# 10
+./scripts/ques10.sh
+#11
+./scripts3/prime.sh
+#12
+./scripts3/reverse.sh
+#13
+./scripts3/password.sh
+#14
+grep -v '^$' file.txt
+#15
+ls -l /home/$USER | sort -h -k5
+# 16
+./scripts3/ques16.sh
