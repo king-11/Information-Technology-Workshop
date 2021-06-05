@@ -94,7 +94,7 @@ if [ $choice -eq 6 ]
   else
    clear
    echo "Opening main menu"
-   ./myhelp.sh
+   exec ./myhelp.sh
    fi
 fi
 echo -n 'Enter Your Choice: '
